@@ -3,8 +3,8 @@ var fs = require('fs'),
     folderOriginalData = 'data/original-gps-data/',
     folderOutputData = 'data/',
     r = [],
-    savePointsEvery = 3,
-    precision = 4,
+    savePointsEvery = 4,
+    precision = 6,
     files = fs.readdirSync(folderOriginalData),
     ouputFileName = folderOutputData + "output." + savePointsEvery + "." + precision + ".gpx";
 
@@ -14,7 +14,7 @@ for (var j in files.sort()) {
     // break;
 }
 
-var array = fs.writeFileSync(ouputFileName, [
+fs.writeFileSync(ouputFileName, [
     '<?xml version="1.0"?>',
     '<gpx creator="GPS Visualizer http://www.gpsvisualizer.com/" version="1.0" xmlns="http://www.topografix.com/GPX/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">',
     '<trk>',
