@@ -29,6 +29,14 @@ The output file was 6 MB
 
 The output files are in the folder data.
 
+# Blog article:
+
+https://coding-and-design.blogspot.de/2016/11/gps-nmea-gpx-or-klm-converter-for.html
+
+# Example of data imported in Google Map
+
+https://www.google.com/maps/d/u/0/edit?hl=en_US&mid=15CP7PErBuWqA_4r5Kh5ngExjkIg&ll=63.953737510408395%2C-19.131404323596257&z=8
+
 # Others
 
 Online converter:
