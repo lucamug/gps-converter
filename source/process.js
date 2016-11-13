@@ -1,4 +1,8 @@
-// Read the file and print its contents.
+// gps-converter by lucamug
+// more info at
+// https://github.com/lucamug/gps-converter
+// https://coding-and-design.blogspot.de/2016/11/gps-nmea-gpx-or-klm-converter-for.html
+// https://gist.github.com/lucamug/8a34875ee9f51d8ad0799a43f3eded54
 var fs = require('fs'),
 	folderOriginalData = 'data/original-gps-data/',
 	folderOutputData = 'data/',
