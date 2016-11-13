@@ -15,15 +15,15 @@ for (var j in files.sort()) {
 }
 
 fs.writeFileSync(ouputFileName, [
-    '<?xml version="1.0"?>',
-    '<gpx creator="lucamug https://github.com/lucamug/gps-converter" version="1.0" xmlns="http://www.topografix.com/GPX/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">',
-	    '<trk>',
-		    '<name>All</name>',
-		    '<trkseg>',
-			    r.join(''),
-		    '</trkseg>',
-	    '</trk>',
-    '</gpx>',
+	'<?xml version="1.0"?>',
+	'<gpx creator="lucamug https://github.com/lucamug/gps-converter" version="1.0" xmlns="http://www.topografix.com/GPX/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">',
+		'<trk>',
+			'<name>All</name>',
+			'<trkseg>',
+				r.join(''),
+			'</trkseg>',
+		'</trk>',
+	'</gpx>',
 ].join(''));
 
 console.log("Check the output in " + ouputFileName);
@@ -39,9 +39,9 @@ function processThisFile(filename) {
 			if (!(c % savePointsEvery)) {
 				var ll = getLatLng(row);
 				r.push([
-                    '<trkpt lat="' + ll.lat + '" lon="' + ll.lon + '">',
-                    '</trkpt>',
-                ].join(''));
+					'<trkpt lat="' + ll.lat + '" lon="' + ll.lon + '">',
+					'</trkpt>',
+				].join(''));
 			}
 			// break;
 		}
